@@ -1,0 +1,4 @@
+-- begin SAMPLE_PHONE
+alter table SAMPLE_PHONE add constraint FK_SAMPLE_PHONE_CUSTOMER foreign key (CUSTOMER_ID) references SAMPLE_CUSTOMER(ID)^
+create index IDX_SAMPLE_PHONE_CUSTOMER on SAMPLE_PHONE (CUSTOMER_ID)^
+-- end SAMPLE_PHONE
